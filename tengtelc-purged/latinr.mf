@@ -1,10 +1,32 @@
 %% Tengwar Telcontar - a Unicode Tengwar font
-%% Copyright (c) 2005-2010 Johan Winge
+%% Copyright (c) 2005-2021 Johan Winge, machsna
 
-input setup;
+designsize:=10pt#;
+
+em#:=10pt#;
+ex#:=3.5pt#;
+en#:=3.1pt#;
+asc#:=ex#+3.0pt#;
+desc#:=3.0pt#;
+
+mode_setup;
+define_pixels(en);
+
+string font_ps_name, font_name, font_weight, font_copyright, font_version;
+
+font_copyright:="Copyright (c) 2005-2010 by Johan Winge, 2009-2010 J.  'Mach' Wust.";
+font_version="0.09";
 font_ps_name:="tengtelclatin";
 font_name:="Tengwar Telcontar Latin";
-input regular;
-input latin;
+font_weight:="Regular";
+
+input tracing;
+
+beginchr("B",1en);
+
+input beta.mf;
+
+endchr;
+
 exit; end.
 
