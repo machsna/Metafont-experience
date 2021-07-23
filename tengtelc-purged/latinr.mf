@@ -28,5 +28,13 @@ input beta.mf;
 
 endchr;
 
+beginchr("A",1en);
+
+pickup pencircle;
+
+input A.mf;
+
+endchr;
+
 exit; end.
 
